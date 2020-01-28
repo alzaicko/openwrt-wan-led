@@ -14,16 +14,16 @@
 
 В скрипте есть переменные:
 ``` bash
-wan-led-color2='/sys/class/leds/c50-v3:orange:wan/brightness'
-wan-led-color1='/sys/class/leds/c50-v3:green:wan/brightness'
+wan_led_color2='/sys/class/leds/c50-v3:orange:wan/brightness'
+wan_led_color1='/sys/class/leds/c50-v3:green:wan/brightness'
 ```
 > Где: 
 Вам вместо c50-v3:green:wan необходимо указать свои светодиоды для вашего роутера. Если у вас один светодиод то нужно закоментировать одну из строк.
 
 Смена цвета или яркости выполняется следующим образом:
 ``` bash
-echo 0 > $wan-led-color2
-echo 255 > $wan-led-color1
+echo 0 > $wan_led_color2
+echo 255 > $wan_led_color1
 ```
 >Где:
 От нуля до 255 указывается яркость светодиода. Переменными указывается цвет
