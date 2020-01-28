@@ -14,8 +14,8 @@
 
 В скрипте есть переменные:
 ``` bash
-wan_led_color2='/sys/class/leds/c50-v3:orange:wan/brightness'
 wan_led_color1='/sys/class/leds/c50-v3:green:wan/brightness'
+wan_led_color2='/sys/class/leds/c50-v3:orange:wan/brightness'
 ```
 > Где: 
 Вам вместо c50-v3:green:wan необходимо указать свои светодиоды для вашего роутера. Если у вас один светодиод то нужно закоментировать одну из строк.
