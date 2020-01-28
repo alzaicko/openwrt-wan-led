@@ -2,11 +2,17 @@
 
 START=99
 STOP=1
+process=$(pgrep -f inet-status)
 
 start(){
-	/usr/bin/inet-status &
+        /usr/bin/inet-status &
 }
 
 stop(){
-	killall -9 inet-status
+        kill -9 $process
+}
+
+restart(){
+        kill -9 $process
+        /usr/bin/inet-status &
 }
